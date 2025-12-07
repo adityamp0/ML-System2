@@ -1,0 +1,20 @@
+name: CI
+ 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+      env:
+  CSV_URL: "train_pca.csv"
+
+  jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+
+    
